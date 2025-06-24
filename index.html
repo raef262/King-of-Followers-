@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ملك المتابعين | متابعين ولايكات حقيقية بأسعار مميزة</title>
+    <style>
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: #0f0f1a;
+            margin: 0;
+            padding: 0;
+            color: #fff;
+        }
+        .header {
+            background: linear-gradient(135deg, #ff9900 0%, #ff6600 50%, #cc3300 100%);
+            color: white;
+            padding: 30px 0;
+            text-align: center;
+            box-shadow: 0 4px 30px rgba(255, 153, 0, 0.4);
+            border-bottom: 2px solid #ff9900;
+        }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        .section-title {
+            text-align: center;
+            color: #ff9900;
+            text-shadow: 0 0 15px rgba(255, 153, 0, 0.4);
+            margin: 40px 0 20px;
+            font-size: 28px;
+        }
+        .products {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            margin-top: 20px;
+        }
+        .product-card {
+            background: rgba(15, 15, 26, 0.8);
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(255, 153, 0, 0.3);
+            width: 280px;
+            padding: 25px;
+            transition: all 0.3s;
+            border: 1px solid #ff9900;
+        }
+        .product-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 0 30px rgba(255, 153, 0, 0.6);
+        }
+        .product-card h3 {
+            color: #ff9900;
+            margin-top: 0;
+            font-size: 24px;
+            text-shadow: 0 0 10px rgba(255, 153, 0, 0.5);
+        }
+        .price {
+            font-size: 28px;
+            font-weight: bold;
+            color: #ffffff;
+            margin: 20px 0;
+            background: linear-gradient(135deg, #ff9900 0%, #cc3300 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            text-shadow: 0 0 15px rgba(255, 153, 0, 0.3);
+        }
+        .currency {
+            font-size: 18px;
+            color: #ff9900;
+        }
+        .buy-btn {
+            background: linear-gradient(135deg, #ff9900 0%, #cc3300 100%);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 8px;
+            cursor: pointer;
+            width: 100%;
+            font-size: 18px;
+            font-weight: bold;
+            transition: all 0.3s;
+            margin-top: 15px;
+            box-shadow: 0 0 15px rgba(255, 153, 0, 0.3);
+        }
+        .buy-btn:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 25px rgba(255, 153, 0, 0.6);
+        }
+        .features {
+            list-style-type: none;
+            padding: 0;
+            margin: 20px 0;
+        }
+        .features li {
+            padding: 8px 0;
+            position: relative;
+            padding-right: 30px;
+            border-bottom: 1px dashed rgba(255, 153, 0, 0.3);
+        }
+        .features li:before {
+            content: "👑";
+            color: #ff9900;
+            position: absolute;
+            right: 0;
+            font-size: 18px;
+        }
+        .footer {
+            background: linear-gradient(135deg, #0f0f1a 0%, #1a0f2a 100%);
+            color: white;
+            text-align: center;
+            padding: 30px;
+            margin-top: 60px;
+            border-top: 1px solid #ff9900;
+            box-shadow: 0 -5px 30px rgba(255, 153, 0, 0.2);
+        }
+        .logo {
+            font-size: 42px;
+            font-weight: bold;
+            background: linear-gradient(135deg, #ff9900 0%, #cc3300 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 10px;
+            text-shadow: 0 0 20px rgba(255, 153, 0, 0.4);
+        }
+        .tagline {
+            font-size: 18px;
+            opacity: 0.9;
+            margin-bottom: 20px;
+        }
+        @media (max-width: 768px) {
+            .product-card {
+                width: 100%;
+            }
+            .logo {
+                font-size: 32px;
+            }
+        }
+    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="header">
+        <div class="logo">ملك المتابعين</div>
+        <div class="tagline">متابعين ولايكات حقيقية بأسعار مميزة</div>
+    </div>
+
+    <div class="container">
+        <h2 class="section-title">باقات المتابعين</h2>
+        <div class="products">
+            <!-- باقة 1 -->
+            <div class="product-card">
+                <h3>الباقة الأساسية</h3>
+                <div class="price">23 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>1000 متابع حقيقي</li>
+                    <li>جودة عالية</li>
+                    <li>تسليم خلال 24 ساعة</li>
+                    <li>ضمان استبدال</li>
+                    <li>دعم سريع</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات المتابعين', 'الباقة الأساسية', '1000 متابع', '23 دينار ليبي')">شراء المنتج</button>
+            </div>
+            
+            <!-- باقة 2 -->
+            <div class="product-card">
+                <h3>الباقة المميزة</h3>
+                <div class="price">46 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>2000 متابع حقيقي</li>
+                    <li>متابعين ناشطين</li>
+                    <li>تسليم خلال 12 ساعة</li>
+                    <li>ضمان 3 أشهر</li>
+                    <li>دعم فوري</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات المتابعين', 'الباقة المميزة', '2000 متابع', '46 دينار ليبي')">شراء المنتج</button>
+            </div>
+            
+            <!-- باقة 3 -->
+            <div class="product-card">
+                <h3>الباقة الذهبية</h3>
+                <div class="price">69 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>3000 متابع حقيقي</li>
+                    <li>أعلى جودة</li>
+                    <li>تسليم خلال 6 ساعات</li>
+                    <li>ضمان 6 أشهر</li>
+                    <li>أولوية في الدعم</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات المتابعين', 'الباقة الذهبية', '3000 متابع', '69 دينار ليبي')">شراء المنتج</button>
+            </div>
+            
+            <!-- باقة 4 -->
+            <div class="product-card">
+                <h3>الباقة الماسية</h3>
+                <div class="price">92 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>4000 متابع حقيقي</li>
+                    <li>أفضل جودة</li>
+                    <li>تسليم فوري</li>
+                    <li>ضمان سنة كاملة</li>
+                    <li>دعم VIP</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات المتابعين', 'الباقة الماسية', '4000 متابع', '92 دينار ليبي')">شراء المنتج</button>
+            </div>
+        </div>
+
+        <h2 class="section-title">باقات الإعجابات (اللايكات)</h2>
+        <div class="products">
+            <!-- باقة لايكات 1 -->
+            <div class="product-card">
+                <h3>باقة الإعجابات الأساسية</h3>
+                <div class="price">7 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>1000 لايك حقيقي</li>
+                    <li>جودة عالية</li>
+                    <li>تسليم خلال 24 ساعة</li>
+                    <li>ضمان استبدال</li>
+                    <li>دعم سريع</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات الإعجابات', 'الباقة الأساسية', '1000 لايك', '7 دينار ليبي')">شراء المنتج</button>
+            </div>
+            
+            <!-- باقة لايكات 2 -->
+            <div class="product-card">
+                <h3>باقة الإعجابات المميزة</h3>
+                <div class="price">14 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>2000 لايك حقيقي</li>
+                    <li>إعجابات ناشطة</li>
+                    <li>تسليم خلال 12 ساعة</li>
+                    <li>ضمان 3 أشهر</li>
+                    <li>دعم فوري</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات الإعجابات', 'الباقة المميزة', '2000 لايك', '14 دينار ليبي')">شراء المنتج</button>
+            </div>
+            
+            <!-- باقة لايكات 3 -->
+            <div class="product-card">
+                <h3>باقة الإعجابات الذهبية</h3>
+                <div class="price">21 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>3000 لايك حقيقي</li>
+                    <li>أعلى جودة</li>
+                    <li>تسليم خلال 6 ساعات</li>
+                    <li>ضمان 6 أشهر</li>
+                    <li>أولوية في الدعم</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات الإعجابات', 'الباقة الذهبية', '3000 لايك', '21 دينار ليبي')">شراء المنتج</button>
+            </div>
+            
+            <!-- باقة لايكات 4 -->
+            <div class="product-card">
+                <h3>باقة الإعجابات الماسية</h3>
+                <div class="price">28 <span class="currency">دينار ليبي</span></div>
+                <ul class="features">
+                    <li>4000 لايك حقيقي</li>
+                    <li>أفضل جودة</li>
+                    <li>تسليم فوري</li>
+                    <li>ضمان سنة كاملة</li>
+                    <li>دعم VIP</li>
+                </ul>
+                <button class="buy-btn" onclick="buyProduct('باقات الإعجابات', 'الباقة الماسية', '4000 لايك', '28 دينار ليبي')">شراء المنتج</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <p>للتواصل عبر الواتساب: <a href="https://wa.me/0911075221" style="color: #ff9900; text-decoration: none; font-weight: bold;">0911075221</a></p>
+        <p style="margin-top: 10px;">خدمة عملاء متاحة 24/7</p>
+        <p style="margin-top: 20px; opacity: 0.7;">جميع الحقوق محفوظة &copy; 2023 ملك المتابعين</p>
+    </div>
+
+    <script>
+        function buyProduct(category, productName, quantity, price) {
+            const message = `👑 *طلب جديد من موقع ملك المتابعين* 👑\n\n`
+                         + `📌 *القسم:* ${category}\n`
+                         + `📦 *الباقة:* ${productName}\n`
+                         + `🔢 *الكمية:* ${quantity}\n`
+                         + `💰 *السعر:* ${price}\n\n`
+                         + `يرجى التواصل معي لإتمام عملية الشراء`;
+            
+            const whatsappUrl = `https://wa.me/0911075221?text=${encodeURIComponent(message)}`;
+            window.open(whatsappUrl, '_blank');
+        }
+    </script>
+</body>
+</html>
